@@ -1,0 +1,45 @@
+*{
+	margin: 0;
+	
+}
+.main{
+	background-color: #eee;
+	overflow:auto;
+	margin: 0 auto;
+	min-width: 600px;
+	padding: 20px;
+}
+div{
+	border: 1px solid #999;
+	background-color: white;
+	padding: 20px;
+}
+img{
+	width: 80px;
+	height: 80px;
+	padding: 20px;
+}
+#left{
+	width: 170px;
+	float: left;
+}
+#content{
+	margin-left: 220px;
+	margin-right: 200px;
+}
+#right{
+	width: 120px;
+	float: right;
+}
+#left img{
+	float: left;
+}
+#left p{
+	text-align: center;
+	white-space: nowrap;
+}
+
+#right img{
+	position: relative;
+	padding: 20px auto;
+}
