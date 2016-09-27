@@ -633,17 +633,17 @@ header .login a:hover~.move{
 	margin: 0 30px 15px 0;
 	padding-left: 15px;
 	color: #666;
-  box-sizing: border-box;
+ 	box-sizing: border-box;
 }
 .section-9 .right9 textarea{
 	display: block;
-	width: 645px;
+	width: 630px;
 	background-color: #ededee;
 	height: 120px;
 	border: 0;
 	color: #666;
 	padding: 10px 0 0 15px;
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 .section-9 .right9 input[type="text"]:focus,.section-9 .right9 textarea:focus{
 	background-color: #fff;
@@ -652,7 +652,7 @@ header .login a:hover~.move{
 .section-9 .right9 input[type="button"]{
 	display: block;
 	background-color: #ededee;
-	width: 660px;
+	width: 630px;
 	height: 40px;
 	margin-top: 15px;
 	border: 0;
