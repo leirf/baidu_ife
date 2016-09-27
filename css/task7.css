@@ -140,6 +140,12 @@ header .login a:hover~.move{
 	background-color: rgb(231,79,77);
 	border: 0 solid #fff;
 	cursor: pointer;
+	-webkit-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+.section-1 input:hover{
+	background-color: red;
 }
 .section-2{
 	height: 250px;
@@ -246,18 +252,22 @@ header .login a:hover~.move{
 	background: url(../img/img7/icon-7.png) no-repeat center transparent;
 	background-position: 97% 50%;
 	background-color: #fff;
-	appearance:none;
+	appearance:none;			/*设置appearance:none可以把select的默认三角标去掉,但是在IE上不可用,在chrome和Firefox测试成功*/
 	-moz-appearance:none;
 	-webkit-appearance:none;
 	background-size: 25px 25px;
 	padding-right: 10px;
 	padding-left: 10px;
+	cursor: pointer;
 }
 .section-4 select option{
 	background-color: #ddd;
 	color: #333;
+	font-size: 16px;
+	padding-left: 14px;
+	border: 0;
 }
-.section-4 select option:selected{
+.section-4 select option:hover{
 	background-color: #fff;
 }
 .section-4 input{
@@ -268,6 +278,12 @@ header .login a:hover~.move{
 	border: 0px solid;
 	cursor: pointer;
 	font-size: 16px;
+	-webkit-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+.section-4 input:hover{
+	background-color: red;
 }
 .section-5{
 	height: 600px;
@@ -554,7 +570,7 @@ header .login a:hover~.move{
 }
 .section-8{
 	clear: all;
-	height: 300px;
+	height: 200px;
 	text-align: center;
 	color: #999;
 	font-size: 12px;
@@ -571,4 +587,142 @@ header .login a:hover~.move{
 	height: 10px;
 	margin: 2px auto;
 	border-top: 2px solid #e74f4d;
+}
+.section-9{
+	height: 450px;
+	width: 100%;
+	position: relative;
+	/*border: 1px solid #000;*/
+}
+.section-9 .left9{
+	position: absolute;
+	/*width: 23%;*/
+	left: 10%;
+	/*border: 1px solid #000;*/
+  font-size: 12px;
+  color: #888;
+  line-height: 20px;
+}
+.section-9 .left9>p>span{
+	display: block;
+	color: #666;
+	font-size: 14px;
+	/*padding-bottom: 10px;*/
+}
+.section-9 .left9>span{
+	display: block;
+	position: relative;
+	/*text-align: right;*/
+	left: 85%;
+	padding-bottom: 20px;
+	cursor: pointer;
+}
+.section-9 .right9{
+	position: absolute;
+	width: 55%;
+	left: 40%;
+	/*border: 1px solid #000;*/
+	font-size: 0;
+}
+.section-9 .right9 input[type="text"]{
+	height: 40px;
+	width: 300px;
+	background-color: #ededee;
+	font-size: 16px;
+	border: 0;
+	margin: 0 30px 15px 0;
+	padding-left: 15px;
+	color: #666;
+  box-sizing: border-box;
+}
+.section-9 .right9 textarea{
+	display: block;
+	width: 645px;
+	background-color: #ededee;
+	height: 120px;
+	border: 0;
+	color: #666;
+	padding: 10px 0 0 15px;
+  box-sizing: border-box;
+}
+.section-9 .right9 input[type="text"]:focus,.section-9 .right9 textarea:focus{
+	background-color: #fff;
+	border: 2px solid #ededee;
+}
+.section-9 .right9 input[type="button"]{
+	display: block;
+	background-color: #ededee;
+	width: 660px;
+	height: 40px;
+	margin-top: 15px;
+	border: 0;
+	cursor: pointer;
+	font-size: 16px;
+	-webkit-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+.section-9 .right9 input[type="button"]:hover{
+	background-color: #aaa;
+}
+.section-10{
+	height: 360px;
+	background-color: #32353e;
+	color: #fff;
+	font-size: 0;
+	text-align: center;
+	line-height: 16px;
+}
+.section-10 p{
+	font-size: 10px;
+}
+.section-10 p:first-child{
+	display: block;
+	font-size: 16px;
+	padding-top: 80px;
+	line-height: 40px;
+}
+.section-10 input[type="text"]{
+	border: 0;
+	height: 40px;
+	width: 350px;
+	padding-left: 10px;
+	margin-top: 20px;
+}
+.section-10 input[type="button"]{
+	background-color: #6f7178;
+	width: 80px;
+	height: 40px;
+	color: #fff;
+	font-size: 16px;
+	border: 0;
+	text-align: center;
+	cursor: pointer;
+	/*letter-spacing: 10px;*/
+	-webkit-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+.section-10 input[type="button"]:hover{
+	background-color: #555;
+}
+footer{
+	background-color: #2f2f38;
+	/*color: #fff;*/
+	font-size: 12px;
+	height: 60px;
+	/*vertical-align: middle;*/
+	position: relative;
+}
+footer a:first-child{
+	color: #fff;
+	position: absolute;
+	left: 5%;
+	top: 40%;
+}
+footer a:last-child{
+	color: #fff;
+	position: absolute;
+	left: 90%;
+	top: 40%;
 }
