@@ -1,0 +1,509 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #d45d5c;
+}
+header {
+  width: 100%;
+  min-width: 1280px;
+  height: 60px;
+  background: #2189bf;
+  vertical-align: middle;
+  position: relative;
+}
+header img {
+  height: 35px;
+  width: 35px;
+  position: absolute;
+  left: 5%;
+  top: 12px;
+}
+header input {
+  display: block;
+  position: absolute;
+  width: 280px;
+  height: 25px;
+  left: 60%;
+  top: 17px;
+  border: 0;
+  padding-left: 35px;
+  background: url("../img/img9/zoom.png") no-repeat;
+  background-color: #fff;
+  background-position: 3%;
+  border-radius: 12px;
+}
+header div {
+  font-size: 14px;
+  position: absolute;
+  right: 5%;
+  height: 25px;
+  top: 17px;
+  padding-left: 25px;
+  background: url("../img/img9/login.png") no-repeat;
+  background-size: 16px 22px;
+  background-position: 0;
+  vertical-align: middle;
+}
+.container {
+  min-width: 1280px;
+  color: #d45d5c;
+  height: 1200px;
+}
+.container > .left {
+  width: 20%;
+  height: 1200px;
+  float: left;
+  background-color: #2a2e3d;
+  position: relative;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+.container .left .mark1 {
+  height: 90px;
+  width: 100px;
+  vertical-align: middle;
+  position: relative;
+}
+.container .left .mark1 .circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  border: 2px solid #b9babd;
+  box-sizing: border-box;
+  padding: 3px;
+  position: absolute;
+  left: 50px;
+  top: 20px;
+}
+.container .left .mark1 .circle span {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #b9babd;
+}
+.container .left .mark1 p {
+  position: absolute;
+  top: 45%;
+  left: 130px;
+  font-size: 18px;
+}
+.container .left .mark2 {
+  height: 60px;
+  position: relative;
+}
+.container .left .mark2 p {
+  width: 50%;
+  float: left;
+  text-align: center;
+  box-sizing: border-box;
+}
+.container .left .mark2 p:first-child {
+  border-right: 1px solid #555;
+}
+.container .left .mark3 p {
+  height: 30px;
+  width: 100%;
+  position: relative;
+  padding-left: 70px;
+  vertical-align: middle;
+}
+.container .left .mark3 p:first-child {
+  background: url(../img/img9/file_cur.png) no-repeat left 50px 5px;
+}
+.container .left .mark3 p:nth-child(2),
+.container .left .mark3 p:nth-child(6) {
+  background: url(../img/img9/close_arrow.png) no-repeat 70px 5px, url(../img/img9/file_close.png) no-repeat 85px 5px;
+  padding-left: 105px;
+}
+.container .left .mark3 p:nth-child(3) {
+  background: url(../img/img9/open_arrow.png) no-repeat 70px 5px, url(../img/img9/file_cur.png) no-repeat 85px 5px;
+  padding-left: 105px;
+}
+.container .left .mark3 p:nth-child(4) {
+  background: url(../img/img9/doc_open.png) no-repeat 105px 5px;
+  padding-left: 120px;
+}
+.container .left .mark3 p:nth-child(5) {
+  background: url(../img/img9/doc_close.png) no-repeat 105px 5px;
+  padding-left: 120px;
+}
+.container .left .mark3 p:nth-child(6) {
+  padding-bottom: 20px;
+}
+.container .left .mark4,
+.container .left .mark5,
+.container .left .mark6,
+.container .left .mark7,
+.container .left .mark8 {
+  height: 50px;
+  padding-left: 70px;
+}
+.container .left .mark4,
+.container .left .mark6,
+.container .left .mark7 {
+  background: url(../img/img9/star.png) no-repeat 50px 5px;
+}
+.container .left .mark5 {
+  background: url(../img/img9/share.png) no-repeat 50px 5px;
+}
+.container .left .mark8 {
+  background: url(../img/img9/user_info.png) no-repeat 50px 5px;
+}
+.container .right {
+  width: 80%;
+  float: right;
+  border: 1px solid #000;
+  background-color: #eee;
+  height: 1200px;
+  box-sizing: border-box;
+  position: relative;
+}
+.container .right .top {
+  background-color: #fff;
+  height: 30px;
+  width: 100%;
+  font-size: 14px;
+  vertical-align: middle;
+  box-sizing: border-box;
+  padding: 5px 0 0 35px;
+}
+.container .right .top a {
+  padding: 0 10px 0 5px;
+}
+.container .right .section1,
+.container .right .section2,
+.container .right .section3,
+.container .right .section4 {
+  background-color: #fff;
+  width: 90%;
+  left: 5%;
+  position: relative;
+  box-sizing: border-box;
+}
+.container .right .section1 {
+  height: 85px;
+  padding: 15px;
+  margin-top: 20px;
+  padding-left: 30px;
+  font-size: 14px;
+}
+.container .right .section1 div {
+  display: inline-block;
+  margin-right: 20px;
+}
+.container .right .section1 p,
+.container .right .section1 select,
+.container .right .section1 input {
+  display: inline-block;
+  height: 25px;
+  color: #d45d5c;
+  border: 0;
+  box-sizing: border-box;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+.container .right .section1 select {
+  padding-left: 5px;
+  width: 70px;
+  appearance: none;
+  /*设置appearance:none可以把select的默认三角标去掉,但是在IE上不可用,在chrome和Firefox测试成功*/
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border: 1px solid #aaa;
+  background: url("../img/img9/black_arrow.png") no-repeat 55px;
+  background-size: 10px 5px;
+}
+.container .right .section1 select.longerSel {
+  width: 120px;
+  background: url("../img/img9/black_arrow.png") no-repeat 105px;
+}
+.container .right .section1 select option {
+  padding-left: 7px;
+  font-size: 14px;
+}
+.container .right .section1 .mark1 {
+  vertical-align: top;
+}
+.container .right .section1 .mark2 {
+  background: url("../img/img9/change.png") no-repeat right 10px;
+  padding-right: 18px;
+}
+.container .right .section1 .mark4 {
+  vertical-align: middle;
+}
+.container .right .section1 input {
+  width: 50px;
+  height: 25px;
+  margin-bottom: 40px;
+  background-color: #2189bf;
+  color: red;
+}
+.container .right .section2 {
+  margin-top: 10px;
+  height: 60px;
+  background-color: #eee;
+  font-size: 0;
+}
+.container .right .section2 div {
+  box-sizing: border-box;
+  background-color: #fff;
+  display: inline-block;
+  font-size: 12px;
+  vertical-align: middle;
+  text-align: center;
+  height: 60px;
+  cursor: pointer;
+  color: #000;
+  position: relative;
+}
+.container .right .section2 div p {
+  position: absolute;
+  bottom: 35px;
+  left: 30px;
+}
+.container .right .section2 div p:last-child {
+  margin-top: 15px;
+  color: #888;
+  bottom: 10px;
+}
+.container .right .section2 div p:last-child span {
+  font-size: 20px;
+  color: #d45d5c;
+}
+.container .right .section2 .mark1,
+.container .right .section2 .mark8 {
+  margin-right: 9px;
+  width: 30px;
+  background: url("../img/img9/left.png") no-repeat center;
+  background-color: #fff;
+}
+.container .right .section2 .mark1:hover,
+.container .right .section2 .mark8:hover {
+  background-color: #ddd;
+}
+.container .right .section2 .mark2,
+.container .right .section2 .mark3,
+.container .right .section2 .mark4,
+.container .right .section2 .mark5,
+.container .right .section2 .mark6,
+.container .right .section2 .mark7 {
+  box-sizing: border-box;
+  width: 110px;
+  margin-right: 9px;
+}
+.container .right .section2 .mark2:hover,
+.container .right .section2 .mark3:hover,
+.container .right .section2 .mark4:hover,
+.container .right .section2 .mark5:hover,
+.container .right .section2 .mark6:hover,
+.container .right .section2 .mark7:hover {
+  border-top: 5px solid #4389c9;
+}
+.container .right .section2 .mark8 {
+  background: url("../img/img9/right.png") no-repeat center;
+  background-color: #fff;
+}
+.container .right .section2 .mark9 {
+  width: 127px;
+  vertical-align: middle;
+  background: url("../img/img9/history.png") no-repeat 20px;
+  background-color: #fff;
+}
+.container .right .section2 .mark9:hover {
+  background-color: #ddd;
+}
+.container .right .section2 .mark9 span {
+  color: #555;
+  display: block;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+.container .right .section3 {
+  background-color: #eee;
+  margin-top: 20px;
+  color: #000;
+  font-size: 0;
+}
+.container .right .section3 > p {
+  font-size: 12px;
+  line-height: 2em;
+}
+.container .right .section3 div {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 200px;
+  height: 70px;
+  padding-left: 20px;
+  background-color: #fff;
+  position: relative;
+}
+.container .right .section3 div > span {
+  position: absolute;
+  width: 60px;
+  height: 45px;
+  left: 125px;
+  top: 12px;
+}
+.container .right .section3 div p {
+  font-size: 14px;
+  margin-top: 10px;
+}
+.container .right .section3 div p span {
+  display: block;
+  color: #aaa;
+  margin-top: 6px;
+}
+.container .right .section3 .mark1 {
+  border-left: 4px solid #43b29d;
+  margin-right: 39px;
+}
+.container .right .section3 .mark1 > span {
+  background-color: #43b29d;
+}
+.container .right .section3 .mark2 {
+  border-left: 4px solid #388ac1;
+  margin-right: 39px;
+}
+.container .right .section3 .mark2 > span {
+  background-color: #388ac1;
+}
+.container .right .section3 .mark3 {
+  border-left: 4px solid #cf4a36;
+  margin-right: 39px;
+}
+.container .right .section3 .mark3 > span {
+  background-color: #cf4a36;
+}
+.container .right .section3 .mark4 {
+  border-left: 4px solid #e2cd46;
+}
+.container .right .section3 .mark4 > span {
+  background-color: #e2cd46;
+}
+.container .right .section4 {
+  height: 360px;
+  background-color: #eee;
+  margin-top: 15px;
+  box-sizing: border-box;
+}
+.container .right .section4 .left4 {
+  width: 530px;
+  height: 360px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+.container .right .section4 .left4 .title {
+  box-sizing: border-box;
+  height: 40px;
+  background-color: #e3e5e6;
+  width: 100%;
+  vertical-align: middle;
+  color: #aaa;
+  padding: 10px 0 0 20px;
+}
+.container .right .section4 .left4 .content {
+  width: 490px;
+  height: 280px;
+  position: absolute;
+  top: 55px;
+  left: 20px;
+}
+.container .right .section4 .left4 .content span {
+  position: relative;
+  box-sizing: border-box;
+  width: 85px;
+  height: 30px;
+  display: inline-block;
+  margin-right: 2px;
+  text-align: center;
+  background-color: #ddd;
+  padding-top: 3px;
+  border: 2px solid #ddd;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  cursor: pointer;
+  z-index: 100;
+}
+.container .right .section4 .left4 .content span:hover ~ div {
+  display: none;
+}
+.container .right .section4 .left4 .content span:hover ~ span {
+  background-color: #ddd;
+  border-bottom: 2px solid #ddd;
+}
+.container .right .section4 .left4 .content span:nth-child(1) {
+  background-color: #fff;
+  border-bottom: 0;
+}
+.container .right .section4 .left4 .content span:nth-child(1):hover {
+  background-color: #fff;
+  border-bottom: 0;
+}
+.container .right .section4 .left4 .content span:nth-child(1):hover ~ .table1 {
+  display: block;
+}
+.container .right .section4 .left4 .content span:nth-child(2):hover {
+  background-color: #fff;
+  border-bottom: 0;
+}
+.container .right .section4 .left4 .content span:nth-child(2):hover ~ .table2 {
+  display: block;
+}
+.container .right .section4 .left4 .content span:nth-child(3):hover {
+  background-color: #fff;
+  border-bottom: 0;
+}
+.container .right .section4 .left4 .content span:nth-child(3):hover ~ .table3 {
+  display: block;
+}
+.container .right .section4 .left4 .content span:nth-child(4):hover {
+  background-color: #fff;
+  border-bottom: 0;
+}
+.container .right .section4 .left4 .content span:nth-child(4):hover ~ .table4 {
+  display: block;
+}
+.container .right .section4 .left4 .content span:nth-child(5):hover {
+  background-color: #fff;
+  border-bottom: 0;
+}
+.container .right .section4 .left4 .content span:nth-child(5):hover ~ .table5 {
+  display: block;
+}
+.container .right .section4 .left4 .content div {
+  position: absolute;
+  top: 28px;
+  width: 490px;
+  height: 250px;
+  border: 2px solid #ddd;
+  display: none;
+  padding-top: 30px;
+  padding-left: 40px;
+  box-sizing: border-box;
+  z-index: 10;
+}
+.container .right .section4 .left4 .content div table {
+  left: 40px;
+  top: 60px;
+  border-collapse: collapse;
+}
+.container .right .section4 .left4 .content div table td {
+  height: 30px;
+  width: 100px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+.container .right .section4 .left4 .content div table td:hover {
+  background-color: #eee;
+}
+.container .right .section4 .left4 .content div.table1 {
+  display: block;
+}

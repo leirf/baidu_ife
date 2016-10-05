@@ -1,0 +1,44 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.flexbox{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	margin: 20px;
+	border: 1px solid #aaa;
+}
+.flexbox div{
+	box-sizing: border-box;
+	width: 150px;
+	border: 1px solid #f00;
+	margin-bottom: 10px;
+}
+.box1 {
+    height: 120px;
+}
+
+.box2 {
+    height: 100px;
+}
+
+.box3 {
+    height: 40px;
+}
+
+.box4 {
+    height: 200px;
+    border: 1px solid blue!important;
+}
+
+@media all and (max-width:640px) {
+	.box4{
+		order: -1;
+	}
+	.flexbox{
+		flex-wrap: wrap;
+		align-items: flex-start;
+	}
+} 

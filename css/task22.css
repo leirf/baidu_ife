@@ -1,0 +1,26 @@
+body{
+	text-align: center;
+}
+[class *= level] {
+	display: flex;
+	padding: 20px;
+	border: 2px #365495 solid;
+	background: #fff;
+	margin: 10px;
+	flex: 1;
+}
+button {
+	display: inline-block;
+	margin: 20px;
+	width: 100px;
+	background-color: #fff;
+	color: #365495;
+	border-radius: 5px;
+	border: 1px solid #365495;
+	cursor: pointer;
+	transition: all 0.5s ease-in-out;
+}
+button:hover{
+	background-color: #365495;
+	color: #fff;
+}
