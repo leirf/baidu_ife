@@ -17,7 +17,7 @@ var traversalObj = {
 	index: 0,
 	//setTimeout返回的清除标志
 	clearSign: ""
-}
+};
 /**
  * 前序遍历函数
  * @param  {obj} node 根节点
@@ -59,7 +59,8 @@ function postOrderTraversalNode(node) {
  * @return {} 
  */
 function threeTraversalNode() {
-	var root = document.querySelector('.level0');
+	var root = document.querySelector('.level_0');
+	console.log(root);
 	preOrderTraversalNode(root);
 	inOrderTraversalNode(root);
 	postOrderTraversalNode(root);
@@ -75,8 +76,40 @@ function clearPrevLoop(arr) {
 		item.style.backgroundColor = "#fff";
 	});
 	traversalObj.index = 0;
-	clearTimeOut(traversalObj.clearSign);
+	clearTimeout(traversalObj.clearSign);
 }
+
 function gameLoop(arr) {
-	
+	if (traversalObj.index <= arr.length) {
+		if (traversalObj.index != 0) {
+			arr[traversalObj.index - 1].style.backgroundColor = "#fff";
+		}
+		if (traversalObj.index != arr.length) {
+			arr[traversalObj.index].style.backgroundColor = "#365495";
+		}
+		traversalObj.index++;
+		traversalObj.clearSign = setTimeout(function () {
+			gameLoop(arr);
+		},1000);
+		console.log(traversalObj.clearSign);
+	} else {
+		traversalObj.index = 0;
+	}
 }
+
+function init() {
+	threeTraversalNode();
+	console.log(traversalObj.threeTypeArr);
+	var btns = document.querySelectorAll('button');
+	console.log(btns);
+	for (var i = 0; i < btns.length; i++) {
+		(function (n) {
+			Util.addEventHandler(btns[n],"click",function () {
+				clearPrevLoop(traversalObj.threeTypeArr[n]);
+				gameLoop(traversalObj.threeTypeArr[n]);
+			});
+		})(i);
+	}
+}
+
+init();
