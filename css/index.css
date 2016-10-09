@@ -1,0 +1,77 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	background-color: #eee;
+	font-family: "微软雅黑";
+}
+header{
+	min-width: 400px;
+	height: 200px;
+	margin: 0 auto;
+	font-size: 60px;
+	color: #606c71;
+	text-shadow: 2px 2px 0px rgba(78, 214, 208, 1);
+	text-align: center;
+	padding: 50px 0px;
+}
+header p{
+	width: 50%;
+	height: 120px;
+	min-width: 400px;
+	/*display: block;*/
+	margin: 0 auto;
+	vertical-align: middle;
+	word-spacing: 30px;
+	border-bottom: 3px solid rgba(78, 214, 208, 1);
+}
+section{
+	width: 90%;
+	min-width: 400px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	-ms-align-content: flex-start;
+	align-content: flex-start;
+	margin: 0 auto;
+	/*text-align: left;*/
+}
+a{
+	width: 300px;
+	height: 40px;
+	margin: 0 20px 50px 20px;
+	text-decoration: none;
+	display: inline-block;
+	text-align: center;
+	font-size: 25px;
+	letter-spacing: 5px;
+	vertical-align: middle;
+	border: .1rem solid rgba(78, 214, 208, 1);
+	color: rgba(78, 214, 208, 1);
+	border-radius: .5rem;
+	box-shadow: 0px 0px 15px rgba(129, 145, 152, 1);
+	transition: all .5s ease-in-out;
+}
+section span{
+	display: none;
+	font-size: 16px;
+	color: #888;
+	padding-top: 10px;
+	letter-spacing: 0;
+}
+a:hover{
+	color: #fff;
+	box-shadow: 0 0 0 0;
+	background-color: rgba(78, 214, 208, 1);
+}
+a:hover span{
+	display: block;
+}
+@media all and (min-width: 1150px) {
+	section{
+		justify-content: space-between;
+	}
+}
+

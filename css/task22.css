@@ -1,5 +1,7 @@
 body{
 	text-align: center;
+	min-width: 1000px;
+	padding-top: 100px;
 }
 [class *= level] {
 	display: flex;
@@ -11,7 +13,7 @@ body{
 }
 button {
 	display: inline-block;
-	margin: 20px;
+	margin: 50px 20px;
 	width: 100px;
 	background-color: #fff;
 	color: #365495;
